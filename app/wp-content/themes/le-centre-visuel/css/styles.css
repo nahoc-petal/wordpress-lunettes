@@ -1,0 +1,116 @@
+.lustria {
+  font-family: Lustria;
+  font-weight: 400 !important; }
+
+.lato {
+  font-family: Lato; }
+
+.has-text-accent {
+  color: #791c2a !important; }
+
+.navbar-item img {
+  max-height: 7rem !important; }
+
+#menu-main-menu {
+  display: flex; }
+
+.menu-main-menu-container {
+  display: flex;
+  align-items: center; }
+
+.navbar-item:last-child a {
+  margin-right: 0; }
+.navbar-item a {
+  color: #791c2a !important;
+  margin-right: 2rem; }
+
+.about-bg,
+.is-homepage-banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.hero .title {
+  font-size: 7.5rem;
+  font-weight: 900 !important; }
+
+.is-homepage-banner {
+  background-image: url(../images/wordpress.templatemela.com-4052153077349420.jpg); }
+
+.about-bg {
+  background-image: url(../images/a-propos-bg.jpg);
+  background-position: left; }
+
+.separator {
+  position: relative;
+  top: 2.75rem;
+  z-index: -1; }
+
+.box {
+  height: 100%; }
+
+.about {
+  position: relative;
+  overflow: hidden; }
+
+.team .title {
+  background: #ffffff;
+  display: inline-block;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+
+.about-pattern {
+  width: calc(100% + 200px);
+  margin-left: -100px !important;
+  background-image: url(../images/bg-ptn.jpg);
+  background-repeat: repeat;
+  background-size: auto;
+  transform: skewX(13deg);
+  -webkit-transform: skewX(13deg);
+  -ms-transform: skewX(13deg);
+  -o-transform: skewX(13deg);
+  -moz-transform: skewX(13deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.45; }
+
+.about-description {
+  padding: 4rem; }
+
+.is-team-member-image {
+  border-radius: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 2rem; }
+
+.yves {
+  background-image: url(../images/team/yves-allard.jpg); }
+
+.blandine {
+  background-image: url(../images/team/blandine-sonnier.jpg); }
+
+.marie-claude {
+  background-image: url(../images/team/marie-claude-latreille.jpg); }
+
+.aviva {
+  background-image: url(../images/team/aviva-masella.jpg); }
+
+.judith {
+  background-image: url(../images/team/judith-naud.jpg); }
+
+.eric {
+  background-image: url(../images/team/eric-pharand.jpg); }
+
+.fatima {
+  background-image: url(../images/team/fatima-menhem.jpeg); }
+
+.contact {
+  background-color: #791c2a; }

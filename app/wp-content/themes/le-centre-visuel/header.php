@@ -12,47 +12,45 @@
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<?php wp_head(); ?>
+<head>
+  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="profile" href="https://gmpg.org/xfn/11">
+  <?php wp_head(); ?>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lustria|Lato:400,600,900" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'le-centre-visuel' ); ?></a>
+  <div id="page" class="site">
+    <a class="skip-link screen-reader-text" href="#content">
+      <?php esc_html_e( 'Skip to content', 'le-centre-visuel' ); ?></a>
+    <header id="masthead" class="container lato is-uppercase">
+      <nav class="navbar is-transparent">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="" />
+          </a>
+          <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$le_centre_visuel_description = get_bloginfo( 'description', 'display' );
-			if ( $le_centre_visuel_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $le_centre_visuel_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+          <div class="navbar-end">
+            <?php
+              wp_nav_menu( array(
+                'theme_location' => 'menu-1',
+              ) );
+            ?>
+          </div>
+        </div>
+      </nav>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'le-centre-visuel' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+    </header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+    <div id="content" class="site-content">

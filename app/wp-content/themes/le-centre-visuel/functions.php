@@ -120,7 +120,9 @@ add_action( 'widgets_init', 'le_centre_visuel_widgets_init' );
  * Enqueue scripts and styles.
  */
 function le_centre_visuel_scripts() {
-	wp_enqueue_style( 'le-centre-visuel-style', get_stylesheet_uri() );
+  wp_enqueue_style( 'le-centre-visuel-style', get_stylesheet_uri() );
+  
+  wp_enqueue_style( 'custom-styles', get_template_directory_uri() . '/css/styles.css' );
 
 	wp_enqueue_script( 'le-centre-visuel-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
@@ -159,3 +161,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function add_classes_on_li($classes, $item, $args) {
+  $classes[] = 'navbar-item';
+  return $classes;
+}
+add_filter('nav_menu_css_class','add_classes_on_li',1,3);

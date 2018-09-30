@@ -1,36 +1,32 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package Le_centre_visuel
- */
+</div><!-- #content -->
 
-?>
-
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'le-centre-visuel' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'le-centre-visuel' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'le-centre-visuel' ), 'le-centre-visuel', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<footer class="footer">
+  <div class="content">
+    <div class="level">
+      <div class="level-left">
+        <p class="lato">Copyright 2015 - Le Centre Visuel de Montréal-Nord | Optométristes Montréal | Optométristes
+          Montréal-Nord | Réalisé par Services Optométriques Inc.</p>
+      </div>
+      <div class="level-right">
+        <a href="https://fr-ca.facebook.com/CentreVisuelMTLNord" class="has-text-dark" target="_blank">
+          <span class="icon">
+            <i class="fab fa-facebook-f"></i>
+          </span>
+        </a>
+        &nbsp;
+        <a href="https://plus.google.com/118032684002262065469/" class="has-text-dark" target="_blank">
+          <span class="icon">
+            <i class="fab fa-google-plus-g"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>

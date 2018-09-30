@@ -1,0 +1,23 @@
+.navbar-item img {
+  max-height: 7rem !important;
+}
+
+#menu-main-menu {
+  display: flex;
+}
+
+.menu-main-menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  &:last-child a {
+    margin-right: 0;
+  }
+
+  a {
+    color: #791c2a !important;
+    margin-right: 2rem;
+  }
+}
